@@ -195,6 +195,25 @@ export class WhatsAppMaturador {
   private logMessage(log: MessageLog): void {
     this.messageLogs.push(log);
     
+    // Log estruturado para produção
+    const logEntry = {
+      timestamp: log.timestamp.toISOString(),
+      level: log.success ? 'INFO' : 'ERROR',
+      service: 'maturador',
+      action: 'message_sent',
+      from: log.from,
+      to: log.to,
+      type: log.type,
+      success: log.success,
+      content_length: log.content.length
+    };
+    
+    if (log.success) {
+      console.log(`✅ [${logEntry.timestamp}] ${logEntry.from} → ${logEntry.to} (${log.type})`);
+    } else {
+      console.error(`❌ [${logEntry.timestamp}] Falha: ${logEntry.from} → ${logEntry.to} (${log.type})`);
+    }
+    
     // Keep only last 1000 messages in memory
     if (this.messageLogs.length > 1000) {
       this.messageLogs = this.messageLogs.slice(-1000);
