@@ -15,7 +15,9 @@ export async function GET() {
     // Sempre buscar instâncias conectadas, independentemente do estado do maturador
     const config = getDefaultConfig();
     const wuzapi = new WuzapiClient(config.baseUrl, config.token);
-    const connectedInstances = await wuzapi.getConnectedInstances();
+    
+    // Usar modo silencioso para evitar spam de logs
+    const connectedInstances = await wuzapi.getConnectedInstances(true);
     
     if (!instance) {
       return NextResponse.json({
@@ -28,7 +30,6 @@ export async function GET() {
     }
 
     // Usar os métodos da instância para obter o status correto
-    const status = instance.getStatus();
     const logs = instance.getMessageLogs();
 
     return NextResponse.json({
@@ -39,7 +40,8 @@ export async function GET() {
       logs
     });
   } catch (error) {
-    console.error('Erro ao obter status:', error);
+    // Log apenas erros críticos
+    console.error('Erro crítico ao obter status:', error);
     return NextResponse.json({
       isRunning: false,
       connectedInstances: 0,

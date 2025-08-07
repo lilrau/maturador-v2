@@ -20,7 +20,7 @@ export async function GET() {
         const instances = await wuzapi.getConnectedInstances();
         connectedInstances = instances.length;
         apiStatus = 'connected';
-      } catch (error) {
+      } catch {
         apiStatus = 'error';
       }
     }

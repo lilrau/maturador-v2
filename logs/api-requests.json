@@ -1,0 +1,1730 @@
+[
+  {
+    "timestamp": "2025-08-07T17:54:28.892Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/audio",
+    "token": "matura8_0C...",
+    "body": {
+      "Phone": "554298586109",
+      "Audio": "data:audio/ogg;base64,iVBORw0a"
+    },
+    "headers": {
+      "token": "matura8_0C3FB376D98D-407D-B14D-297565F714AD",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0F055318A0A00BCEC83",
+        "Timestamp": 1754589268
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:54:33.957Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/document",
+    "token": "matura1_1A...",
+    "body": {
+      "Phone": "554298156568",
+      "Document": "data:application/octet-stream;base64,aG9sYSBxdWUKdGFs",
+      "FileName": "dados.csv"
+    },
+    "headers": {
+      "token": "matura1_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0281E467AB3DF06CF26",
+        "Timestamp": 1754589273
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:54:36.039Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura1_1A...",
+    "body": {
+      "Phone": "554298156568",
+      "Body": "🙌 Que legal!"
+    },
+    "headers": {
+      "token": "matura1_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0BF5AB7796C30EA1995",
+        "Timestamp": 1754589275
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:54:40.975Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/document",
+    "token": "matura3_1A...",
+    "body": {
+      "Phone": "554298548933",
+      "Document": "data:application/octet-stream;base64,aG9sYSBxdWUKdGFs",
+      "FileName": "manual.pdf"
+    },
+    "headers": {
+      "token": "matura3_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0463C6F22C4CBE50915",
+        "Timestamp": 1754589280
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:54:42.369Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/document",
+    "token": "matura2_1A...",
+    "body": {
+      "Phone": "554298548472",
+      "Document": "data:application/octet-stream;base64,aG9sYSBxdWUKdGFs",
+      "FileName": "informacoes.pdf"
+    },
+    "headers": {
+      "token": "matura2_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0292B9271E52004FC75",
+        "Timestamp": 1754589281
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:54:44.657Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura2_1A...",
+    "body": {
+      "Phone": "554298548472",
+      "Body": "😄 Conta novidade!"
+    },
+    "headers": {
+      "token": "matura2_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0F7BEFD2EF3EE5F0B53",
+        "Timestamp": 1754589284
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:54:47.605Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/document",
+    "token": "matura3_1A...",
+    "body": {
+      "Phone": "554299511440",
+      "Document": "data:application/octet-stream;base64,aG9sYSBxdWUKdGFs",
+      "FileName": "planilha.xlsx"
+    },
+    "headers": {
+      "token": "matura3_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB06CA897598B87E11134",
+        "Timestamp": 1754589287
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:54:49.082Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/image",
+    "token": "matura9_1A...",
+    "body": {
+      "Phone": "554298156568",
+      "Image": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+      "Caption": "Gostaram?"
+    },
+    "headers": {
+      "token": "matura9_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0984EAF6F513BA2C5C1",
+        "Timestamp": 1754589288
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:54:50.481Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/image",
+    "token": "matura3_1A...",
+    "body": {
+      "Phone": "554299511440",
+      "Image": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+      "Caption": "Linda imagem"
+    },
+    "headers": {
+      "token": "matura3_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0A06F87AE126E4B32C8",
+        "Timestamp": 1754589290
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:54:52.035Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura9_1A...",
+    "body": {
+      "Phone": "554298156568",
+      "Body": "Nossa!"
+    },
+    "headers": {
+      "token": "matura9_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0153A2247D8A9786212",
+        "Timestamp": 1754589291
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:04.621Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura1_1A...",
+    "body": {
+      "Phone": "554298548954",
+      "Body": "🙌 Haha"
+    },
+    "headers": {
+      "token": "matura1_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB05853728DB80133581A",
+        "Timestamp": 1754589304
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:10.116Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura2_1A...",
+    "body": {
+      "Phone": "554298401141",
+      "Body": "Que história é essa?"
+    },
+    "headers": {
+      "token": "matura2_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB01BC95C642B65DCF6D9",
+        "Timestamp": 1754589309
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:11.012Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/image",
+    "token": "matura1_1A...",
+    "body": {
+      "Phone": "554298548933",
+      "Image": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+      "Caption": "Tirei agora pouco"
+    },
+    "headers": {
+      "token": "matura1_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0F76EDE4F36F5C70BA0",
+        "Timestamp": 1754589310
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:12.521Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/audio",
+    "token": "matura2_1A...",
+    "body": {
+      "Phone": "554298401141",
+      "Audio": "data:audio/ogg;base64,iVBORw0a"
+    },
+    "headers": {
+      "token": "matura2_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB08564115FA11D4338E9",
+        "Timestamp": 1754589312
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:17.618Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura1_1A...",
+    "body": {
+      "Phone": "554298586109",
+      "Body": "Valeu!"
+    },
+    "headers": {
+      "token": "matura1_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB05675553132CBF83F2E",
+        "Timestamp": 1754589317
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:18.854Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura9_1A...",
+    "body": {
+      "Phone": "554298548472",
+      "Body": "😂 Haha"
+    },
+    "headers": {
+      "token": "matura9_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0AB27959AB0A5AA793E",
+        "Timestamp": 1754589318
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:20.700Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura7_1A...",
+    "body": {
+      "Phone": "554298376984",
+      "Body": "Boa tarde"
+    },
+    "headers": {
+      "token": "matura7_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0E01B8C8DA0D67DE391",
+        "Timestamp": 1754589320
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:22.494Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura_6...",
+    "body": {
+      "Phone": "554299907566",
+      "Body": "Bom dia 🙌"
+    },
+    "headers": {
+      "token": "matura_6",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0576B012E74853EDDA7",
+        "Timestamp": 1754589322
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:22.614Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura_4...",
+    "body": {
+      "Phone": "554299511440",
+      "Body": "Que horas são? 😎"
+    },
+    "headers": {
+      "token": "matura_4",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0219DF15B1379897827",
+        "Timestamp": 1754589322
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:29.704Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/audio",
+    "token": "matura2_1A...",
+    "body": {
+      "Phone": "554298586109",
+      "Audio": "data:audio/ogg;base64,iVBORw0a"
+    },
+    "headers": {
+      "token": "matura2_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB01BCC382798DA6D6507",
+        "Timestamp": 1754589329
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:31.713Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/video",
+    "token": "matura2_1A...",
+    "body": {
+      "Phone": "554298586109",
+      "Video": "data:video/mp4;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+      "Caption": "Muito legal esse vídeo"
+    },
+    "headers": {
+      "token": "matura2_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB08A7BC7AB6D88D515D0",
+        "Timestamp": 1754589331
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:36.017Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/image",
+    "token": "matura_6...",
+    "body": {
+      "Phone": "554298349654",
+      "Image": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+      "Caption": "Momento especial"
+    },
+    "headers": {
+      "token": "matura_6",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0B19FAA02447899B07C",
+        "Timestamp": 1754589335
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:36.020Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura3_1A...",
+    "body": {
+      "Phone": "554299511440",
+      "Body": "Obrigado! 🔥"
+    },
+    "headers": {
+      "token": "matura3_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0F2E50005735CB47AA1",
+        "Timestamp": 1754589335
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:37.885Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/audio",
+    "token": "matura_6...",
+    "body": {
+      "Phone": "554298349654",
+      "Audio": "data:audio/ogg;base64,iVBORw0a"
+    },
+    "headers": {
+      "token": "matura_6",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0947E773D62B9693D16",
+        "Timestamp": 1754589337
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:39.555Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/audio",
+    "token": "matura8_0C...",
+    "body": {
+      "Phone": "554298376984",
+      "Audio": "data:audio/ogg;base64,iVBORw0a"
+    },
+    "headers": {
+      "token": "matura8_0C3FB376D98D-407D-B14D-297565F714AD",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0A03D8B192BEA1900D9",
+        "Timestamp": 1754589339
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:40.259Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/audio",
+    "token": "matura2_1A...",
+    "body": {
+      "Phone": "554298349654",
+      "Audio": "data:audio/ogg;base64,iVBORw0a"
+    },
+    "headers": {
+      "token": "matura2_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB007F25F5A249A90D62A",
+        "Timestamp": 1754589339
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:41.820Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/location",
+    "token": "matura_5...",
+    "body": {
+      "Phone": "554298376984",
+      "Name": "Belo Horizonte, MG",
+      "Latitude": -19.9191,
+      "Longitude": -43.9386
+    },
+    "headers": {
+      "token": "matura_5",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0E39FD9F9880BF902A6",
+        "Timestamp": 1754589341
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:46.756Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/audio",
+    "token": "matura1_1A...",
+    "body": {
+      "Phone": "554298424190",
+      "Audio": "data:audio/ogg;base64,iVBORw0a"
+    },
+    "headers": {
+      "token": "matura1_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB07DC05D93B63D8E9CFA",
+        "Timestamp": 1754589346
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:49.852Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/image",
+    "token": "matura2_1A...",
+    "body": {
+      "Phone": "554298401141",
+      "Image": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+      "Caption": "Linda imagem"
+    },
+    "headers": {
+      "token": "matura2_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB029C34A3773D46A51C8",
+        "Timestamp": 1754589349
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:50.741Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/location",
+    "token": "matura1_1A...",
+    "body": {
+      "Phone": "554298424190",
+      "Name": "Curitiba, PR",
+      "Latitude": -25.4284,
+      "Longitude": -49.2733
+    },
+    "headers": {
+      "token": "matura1_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0361C5BC1F3964BA7B2",
+        "Timestamp": 1754589350
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:51.213Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/image",
+    "token": "matura8_0C...",
+    "body": {
+      "Phone": "554298548933",
+      "Image": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+      "Caption": "Compartilhando com vocês"
+    },
+    "headers": {
+      "token": "matura8_0C3FB376D98D-407D-B14D-297565F714AD",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB065CB08629ABE19FB29",
+        "Timestamp": 1754589350
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:53.002Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/audio",
+    "token": "matura2_1A...",
+    "body": {
+      "Phone": "554298401141",
+      "Audio": "data:audio/ogg;base64,iVBORw0a"
+    },
+    "headers": {
+      "token": "matura2_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB06D86B8E5FF771FD817",
+        "Timestamp": 1754589352
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:59.494Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/image",
+    "token": "matura9_1A...",
+    "body": {
+      "Phone": "554298548933",
+      "Image": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+      "Caption": "Que legal, né?"
+    },
+    "headers": {
+      "token": "matura9_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0E4AB0C4C579510EB05",
+        "Timestamp": 1754589359
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:55:59.620Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/image",
+    "token": "matura_11...",
+    "body": {
+      "Phone": "554299907566",
+      "Image": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+      "Caption": "Registro do dia"
+    },
+    "headers": {
+      "token": "matura_11",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB07E02991C10CD18671D",
+        "Timestamp": 1754589359
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:02.553Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/sticker",
+    "token": "matura9_1A...",
+    "body": {
+      "Phone": "554298548933",
+      "Sticker": "data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=="
+    },
+    "headers": {
+      "token": "matura9_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0B2A5EE4FE9395E8B81",
+        "Timestamp": 1754589362
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:03.355Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura12-1...",
+    "body": {
+      "Phone": "554299511440",
+      "Body": "😎 E aí?"
+    },
+    "headers": {
+      "token": "matura12-1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0676E50447D2503D9FF",
+        "Timestamp": 1754589362
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:06.314Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura2_1A...",
+    "body": {
+      "Phone": "554298385978",
+      "Body": "🙌 Estou morrendo de rir!"
+    },
+    "headers": {
+      "token": "matura2_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB00A27145FFF5B10B13A",
+        "Timestamp": 1754589365
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:06.761Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/image",
+    "token": "matura_10...",
+    "body": {
+      "Phone": "554298385978",
+      "Image": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+      "Caption": "Olha essa foto!"
+    },
+    "headers": {
+      "token": "matura_10",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB01C4B35B7FBD2D3F4D7",
+        "Timestamp": 1754589366
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:08.519Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura8_0C...",
+    "body": {
+      "Phone": "554298424190",
+      "Body": "🔥 Que horas são?"
+    },
+    "headers": {
+      "token": "matura8_0C3FB376D98D-407D-B14D-297565F714AD",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0CC7CFE507A3830B3ED",
+        "Timestamp": 1754589368
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:10.235Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/audio",
+    "token": "matura2_1A...",
+    "body": {
+      "Phone": "554298385978",
+      "Audio": "data:audio/ogg;base64,iVBORw0a"
+    },
+    "headers": {
+      "token": "matura2_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB022EAADA57FE57B0C5F",
+        "Timestamp": 1754589369
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:10.257Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/video",
+    "token": "matura7_1A...",
+    "body": {
+      "Phone": "554299511440",
+      "Video": "data:video/mp4;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+      "Caption": "Vale a pena assistir"
+    },
+    "headers": {
+      "token": "matura7_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB07D5767BD5593F5E6A0",
+        "Timestamp": 1754589369
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:12.703Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura_10...",
+    "body": {
+      "Phone": "554298385978",
+      "Body": "😊 De nada"
+    },
+    "headers": {
+      "token": "matura_10",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0826B81F84AED518525",
+        "Timestamp": 1754589372
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:13.073Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/document",
+    "token": "matura1_1A...",
+    "body": {
+      "Phone": "554299511440",
+      "Document": "data:application/octet-stream;base64,aG9sYSBxdWUKdGFs",
+      "FileName": "relatorio.docx"
+    },
+    "headers": {
+      "token": "matura1_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB03B4ABAA4A3B6501062",
+        "Timestamp": 1754589372
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:16.085Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura12-1...",
+    "body": {
+      "Phone": "554298548954",
+      "Body": "👌 Que legal!"
+    },
+    "headers": {
+      "token": "matura12-1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB010D9A4BFF8E1948D99",
+        "Timestamp": 1754589375
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:18.754Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/audio",
+    "token": "matura_11...",
+    "body": {
+      "Phone": "554298401141",
+      "Audio": "data:audio/ogg;base64,iVBORw0a"
+    },
+    "headers": {
+      "token": "matura_11",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB07B91B373E0E511D558",
+        "Timestamp": 1754589378
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:23.313Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura7_1A...",
+    "body": {
+      "Phone": "554299511440",
+      "Body": "🤔 Entendi"
+    },
+    "headers": {
+      "token": "matura7_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0E6A082AB5B40F21B1F",
+        "Timestamp": 1754589382
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:24.511Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura2_1A...",
+    "body": {
+      "Phone": "554298548472",
+      "Body": "Que bom te ver!"
+    },
+    "headers": {
+      "token": "matura2_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB065FBCEC95E577FEE4B",
+        "Timestamp": 1754589384
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:27.476Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura2_1A...",
+    "body": {
+      "Phone": "554298548472",
+      "Body": "Que bom te ver! 😊"
+    },
+    "headers": {
+      "token": "matura2_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0E636C95DEBD97E7CFA",
+        "Timestamp": 1754589387
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:27.862Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura13-1...",
+    "body": {
+      "Phone": "554298376984",
+      "Body": "👍 Certo"
+    },
+    "headers": {
+      "token": "matura13-1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0CE72ACAA6D175ABAF1",
+        "Timestamp": 1754589387
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:29.203Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura7_1A...",
+    "body": {
+      "Phone": "554299907566",
+      "Body": "Entendi"
+    },
+    "headers": {
+      "token": "matura7_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0140B5B3E4E2879462C",
+        "Timestamp": 1754589388
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:30.369Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/image",
+    "token": "matura_6...",
+    "body": {
+      "Phone": "554298376984",
+      "Image": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+      "Caption": "Linda imagem"
+    },
+    "headers": {
+      "token": "matura_6",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB03C909982792738EC92",
+        "Timestamp": 1754589390
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:31.720Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/audio",
+    "token": "matura_11...",
+    "body": {
+      "Phone": "554299907566",
+      "Audio": "data:audio/ogg;base64,iVBORw0a"
+    },
+    "headers": {
+      "token": "matura_11",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0B94C02D6FA838786E3",
+        "Timestamp": 1754589391
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:33.431Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/audio",
+    "token": "matura_11...",
+    "body": {
+      "Phone": "554299907566",
+      "Audio": "data:audio/ogg;base64,iVBORw0a"
+    },
+    "headers": {
+      "token": "matura_11",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0AE46E5361C3121B824",
+        "Timestamp": 1754589393
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:34.101Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura_10...",
+    "body": {
+      "Phone": "554298548472",
+      "Body": "Que legal!"
+    },
+    "headers": {
+      "token": "matura_10",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB07EBA5C49265DE2AFAB",
+        "Timestamp": 1754589393
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:37.108Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/audio",
+    "token": "matura12-1...",
+    "body": {
+      "Phone": "554298354332",
+      "Audio": "data:audio/ogg;base64,iVBORw0a"
+    },
+    "headers": {
+      "token": "matura12-1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB024D324A573425210C2",
+        "Timestamp": 1754589396
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:37.149Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura2_1A...",
+    "body": {
+      "Phone": "554298354332",
+      "Body": "👌 Que história é essa?"
+    },
+    "headers": {
+      "token": "matura2_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB035BCE0B2B8F3295B8D",
+        "Timestamp": 1754589396
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:37.307Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura3_1A...",
+    "body": {
+      "Phone": "554298376984",
+      "Body": "🤔 Haha"
+    },
+    "headers": {
+      "token": "matura3_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB08FA06161DED056547B",
+        "Timestamp": 1754589396
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:42.071Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/audio",
+    "token": "matura3_1A...",
+    "body": {
+      "Phone": "554298376984",
+      "Audio": "data:audio/ogg;base64,iVBORw0a"
+    },
+    "headers": {
+      "token": "matura3_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB077CD19142E68CFEAA5",
+        "Timestamp": 1754589401
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:42.258Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura2_1A...",
+    "body": {
+      "Phone": "554298354332",
+      "Body": "❤️ Me conta tudo!"
+    },
+    "headers": {
+      "token": "matura2_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB04BF96219EC3F838495",
+        "Timestamp": 1754589401
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:46.719Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/audio",
+    "token": "matura_10...",
+    "body": {
+      "Phone": "554298424190",
+      "Audio": "data:audio/ogg;base64,iVBORw0a"
+    },
+    "headers": {
+      "token": "matura_10",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0A57AB816911521E96F",
+        "Timestamp": 1754589406
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:53.041Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/audio",
+    "token": "matura1_1A...",
+    "body": {
+      "Phone": "554298354332",
+      "Audio": "data:audio/ogg;base64,iVBORw0a"
+    },
+    "headers": {
+      "token": "matura1_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB060142D54FFD9976D09",
+        "Timestamp": 1754589412
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:54.388Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/audio",
+    "token": "matura9_1A...",
+    "body": {
+      "Phone": "554299511440",
+      "Audio": "data:audio/ogg;base64,iVBORw0a"
+    },
+    "headers": {
+      "token": "matura9_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB042BA5A947C947F5D48",
+        "Timestamp": 1754589414
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:55.152Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura3_1A...",
+    "body": {
+      "Phone": "554298548933",
+      "Body": "😊 Tudo bem?"
+    },
+    "headers": {
+      "token": "matura3_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0671DFE96BA9C816984",
+        "Timestamp": 1754589414
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:58.073Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/location",
+    "token": "matura_6...",
+    "body": {
+      "Phone": "554298385978",
+      "Name": "Salvador, BA",
+      "Latitude": -12.9714,
+      "Longitude": -38.5014
+    },
+    "headers": {
+      "token": "matura_6",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0BF46AE0682A34EDC9B",
+        "Timestamp": 1754589417
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:56:58.412Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/image",
+    "token": "matura1_1A...",
+    "body": {
+      "Phone": "554298354332",
+      "Image": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+      "Caption": "Linda imagem"
+    },
+    "headers": {
+      "token": "matura1_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB09A065719D20B98EDF0",
+        "Timestamp": 1754589418
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:57:02.063Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura1_1A...",
+    "body": {
+      "Phone": "554298385978",
+      "Body": "Falou! 😊"
+    },
+    "headers": {
+      "token": "matura1_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB051BCF86A3D8EC979B6",
+        "Timestamp": 1754589421
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:57:02.743Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/image",
+    "token": "matura12-1...",
+    "body": {
+      "Phone": "554298424190",
+      "Image": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+      "Caption": "Compartilhando com vocês"
+    },
+    "headers": {
+      "token": "matura12-1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB07B0991B2FE239158DD",
+        "Timestamp": 1754589422
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:57:03.207Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/audio",
+    "token": "matura8_0C...",
+    "body": {
+      "Phone": "554299907566",
+      "Audio": "data:audio/ogg;base64,iVBORw0a"
+    },
+    "headers": {
+      "token": "matura8_0C3FB376D98D-407D-B14D-297565F714AD",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0DD84B3F4539E3AEDEC",
+        "Timestamp": 1754589422
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:57:05.252Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/sticker",
+    "token": "matura2_1A...",
+    "body": {
+      "Phone": "554298548933",
+      "Sticker": "data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=="
+    },
+    "headers": {
+      "token": "matura2_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0DF3767B416C25A9D44",
+        "Timestamp": 1754589424
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:57:06.416Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/image",
+    "token": "matura12-1...",
+    "body": {
+      "Phone": "554298424190",
+      "Image": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+      "Caption": "Tirei agora pouco"
+    },
+    "headers": {
+      "token": "matura12-1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB099F8AB2BFBACFB2163",
+        "Timestamp": 1754589426
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:57:07.372Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/audio",
+    "token": "matura8_0C...",
+    "body": {
+      "Phone": "554299907566",
+      "Audio": "data:audio/ogg;base64,iVBORw0a"
+    },
+    "headers": {
+      "token": "matura8_0C3FB376D98D-407D-B14D-297565F714AD",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0E490B552285703815E",
+        "Timestamp": 1754589427
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:57:08.548Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/sticker",
+    "token": "matura12-1...",
+    "body": {
+      "Phone": "554299511440",
+      "Sticker": "data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=="
+    },
+    "headers": {
+      "token": "matura12-1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB08B9A47187EBED7B1FE",
+        "Timestamp": 1754589428
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:57:08.840Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/sticker",
+    "token": "matura2_1A...",
+    "body": {
+      "Phone": "554298548933",
+      "Sticker": "data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=="
+    },
+    "headers": {
+      "token": "matura2_1A7F5E6F043B-479B-ABA5-CCA260CADD1F",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB0DF8BB26EBDBE2B9388",
+        "Timestamp": 1754589428
+      },
+      "success": true
+    },
+    "error": null
+  },
+  {
+    "timestamp": "2025-08-07T17:57:11.081Z",
+    "endpoint": "https://wuzapi.ugui.tech/chat/send/text",
+    "token": "matura_10...",
+    "body": {
+      "Phone": "554298376984",
+      "Body": "Que legal!"
+    },
+    "headers": {
+      "token": "matura_10",
+      "Content-Type": "application/json"
+    },
+    "response": {
+      "code": 200,
+      "data": {
+        "Details": "Sent",
+        "Id": "3EB04FFEB249CA0F7F5AE5",
+        "Timestamp": 1754589430
+      },
+      "success": true
+    },
+    "error": null
+  }
+]

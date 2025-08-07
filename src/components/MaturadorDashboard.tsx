@@ -1,8 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { WhatsAppMaturador } from '@/lib/maturador';
-import { MaturadorConfig, WuzapiInstance, MessageLog } from '@/types';
+import { WuzapiInstance, MessageLog } from '@/types';
 import { InstancesPanel } from './InstancesPanel';
 import { LogsPanel } from './LogsPanel';
 import { StatusPanel } from './StatusPanel';

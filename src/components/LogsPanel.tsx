@@ -1,12 +1,54 @@
 'use client';
 
 import { MessageLog, MessageType } from '@/types';
+import { useState, useEffect } from 'react';
 
 interface LogsPanelProps {
   logs: MessageLog[];
 }
 
+interface ApiRequestLog {
+  timestamp: string;
+  endpoint: string;
+  token: string;
+  body: any;
+  headers: any;
+  response?: any;
+  error?: {
+    message: string;
+    status?: number;
+    data?: any;
+  };
+}
+
 export function LogsPanel({ logs }: LogsPanelProps) {
+  const [apiLogs, setApiLogs] = useState<ApiRequestLog[]>([]);
+  const [showApiLogs, setShowApiLogs] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const fetchApiLogs = async () => {
+    setLoading(true);
+    try {
+      const response = await fetch('/api/maturador/logs');
+      const data = await response.json();
+      if (data.success) {
+        setApiLogs(data.logs);
+      }
+    } catch (error) {
+      console.error('Erro ao carregar logs da API:', error);
+    }
+    setLoading(false);
+  };
+
+  const clearApiLogs = async () => {
+    try {
+      await fetch('/api/maturador/logs', { method: 'DELETE' });
+      setApiLogs([]);
+    } catch (error) {
+      console.error('Erro ao limpar logs da API:', error);
+    }
+  };
+
   const getMessageTypeIcon = (type: MessageType) => {
     switch (type) {
       case MessageType.TEXT:
@@ -50,75 +92,140 @@ export function LogsPanel({ logs }: LogsPanelProps) {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
-      <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
-        Log de Mensagens ({logs.length})
-      </h2>
-      
-      <div className="space-y-2 max-h-64 overflow-y-auto">
-        {logs.length === 0 ? (
-          <div className="text-center py-8 text-gray-500 dark:text-gray-400">
-            <p>Nenhuma mensagem enviada ainda</p>
-            <p className="text-xs mt-1">Inicie o maturador para ver os logs</p>
+    <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
+      <div className="flex justify-between items-center mb-4">
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+          Logs de Mensagens
+        </h3>
+        <div className="flex gap-2">
+          <button
+            onClick={() => setShowApiLogs(!showApiLogs)}
+            className="px-3 py-1 text-sm bg-blue-500 text-white rounded hover:bg-blue-600"
+          >
+            {showApiLogs ? 'Ocultar' : 'Mostrar'} Logs da API
+          </button>
+          {showApiLogs && (
+            <>
+              <button
+                onClick={fetchApiLogs}
+                disabled={loading}
+                className="px-3 py-1 text-sm bg-green-500 text-white rounded hover:bg-green-600 disabled:opacity-50"
+              >
+                {loading ? 'Carregando...' : 'Atualizar'}
+              </button>
+              <button
+                onClick={clearApiLogs}
+                className="px-3 py-1 text-sm bg-red-500 text-white rounded hover:bg-red-600"
+              >
+                Limpar
+              </button>
+            </>
+          )}
+        </div>
+      </div>
+
+      {showApiLogs && (
+        <div className="mb-6">
+          <h4 className="text-md font-semibold text-gray-700 dark:text-gray-300 mb-3">
+            Logs da API ({apiLogs.length})
+          </h4>
+          <div className="max-h-96 overflow-y-auto space-y-2">
+            {apiLogs.length === 0 ? (
+              <p className="text-gray-500 dark:text-gray-400 text-sm">
+                Nenhum log da API encontrado
+              </p>
+            ) : (
+              apiLogs.map((log, index) => (
+                <div
+                  key={index}
+                  className={`p-3 rounded border ${
+                    log.error ? 'border-red-200 bg-red-50 dark:bg-red-900/20' : 'border-green-200 bg-green-50 dark:bg-green-900/20'
+                  }`}
+                >
+                  <div className="flex justify-between items-start">
+                    <div className="flex-1">
+                      <div className="flex items-center gap-2 mb-1">
+                        <span className={`text-xs px-2 py-1 rounded ${
+                          log.error ? 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200' : 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200'
+                        }`}>
+                          {log.error ? '❌ ERRO' : '✅ SUCESSO'}
+                        </span>
+                        <span className="text-xs text-gray-500 dark:text-gray-400">
+                          {new Date(log.timestamp).toLocaleString()}
+                        </span>
+                      </div>
+                      <div className="text-sm font-mono text-gray-700 dark:text-gray-300">
+                        <strong>Endpoint:</strong> {log.endpoint}
+                      </div>
+                      <div className="text-sm font-mono text-gray-700 dark:text-gray-300">
+                        <strong>Token:</strong> {log.token}
+                      </div>
+                      <div className="text-sm font-mono text-gray-700 dark:text-gray-300">
+                        <strong>Body:</strong> {JSON.stringify(log.body, null, 2)}
+                      </div>
+                      {log.error && (
+                        <div className="text-sm font-mono text-red-700 dark:text-red-300 mt-2">
+                          <strong>Erro:</strong> {log.error.message}
+                          {log.error.status && ` (Status: ${log.error.status})`}
+                          {log.error.data && (
+                            <div className="mt-1">
+                              <strong>Resposta:</strong> {JSON.stringify(log.error.data, null, 2)}
+                            </div>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ))
+            )}
           </div>
+        </div>
+      )}
+
+      <div className="max-h-96 overflow-y-auto space-y-2">
+        {logs.length === 0 ? (
+          <p className="text-gray-500 dark:text-gray-400 text-sm">
+            Nenhuma mensagem enviada ainda
+          </p>
         ) : (
-          logs.slice().reverse().map((log) => (
+          logs.map((log) => (
             <div
               key={log.id}
-              className={`border-l-4 pl-3 py-2 ${
-                log.success 
-                  ? 'border-green-400 bg-green-50 dark:bg-green-900/20' 
-                  : 'border-red-400 bg-red-50 dark:bg-red-900/20'
+              className={`p-3 rounded border ${
+                log.success ? 'border-green-200 bg-green-50 dark:bg-green-900/20' : 'border-red-200 bg-red-50 dark:bg-red-900/20'
               }`}
             >
-              <div className="flex items-center justify-between mb-1">
-                <div className="flex items-center space-x-2">
-                  <span className="text-lg">
-                    {getMessageTypeIcon(log.type)}
-                  </span>
-                  <span className={`text-sm font-medium ${getMessageTypeColor(log.type)}`}>
-                    {log.type.toUpperCase()}
-                  </span>
-                  <span className={`text-xs px-2 py-1 rounded-full ${
-                    log.success 
-                      ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200' 
-                      : 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200'
-                  }`}>
-                    {log.success ? 'Enviado' : 'Falhou'}
-                  </span>
+              <div className="flex justify-between items-start">
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className={`text-xs px-2 py-1 rounded ${
+                      log.success ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200' : 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200'
+                    }`}>
+                      {log.success ? '✅ Enviado' : '❌ Falha'}
+                    </span>
+                    <span className={`text-xs px-2 py-1 rounded ${getMessageTypeColor(log.type)}`}>
+                      {getMessageTypeIcon(log.type)} {log.type}
+                    </span>
+                    <span className="text-xs text-gray-500 dark:text-gray-400">
+                      {log.timestamp.toLocaleString()}
+                    </span>
+                  </div>
+                  <div className="text-sm text-gray-700 dark:text-gray-300">
+                    <strong>De:</strong> {log.from} <strong>Para:</strong> {log.to}
+                  </div>
+                  {log.content && (
+                    <div className="text-xs text-gray-600 dark:text-gray-400 mt-1">
+                      <strong>Conteúdo:</strong> {log.content.substring(0, 100)}
+                      {log.content.length > 100 && '...'}
+                    </div>
+                  )}
                 </div>
-                <span className="text-xs text-gray-500 dark:text-gray-400">
-                  {log.timestamp.toLocaleTimeString()}
-                </span>
               </div>
-              
-              <div className="text-xs text-gray-600 dark:text-gray-300 mb-1">
-                <span className="font-medium">De:</span> {log.from} →{' '}
-                <span className="font-medium">Para:</span> {log.to}
-              </div>
-              
-              {log.type === MessageType.TEXT && (
-                <div className="text-sm text-gray-700 dark:text-gray-200 bg-gray-100 dark:bg-gray-700 rounded px-2 py-1">
-                  {log.content}
-                </div>
-              )}
-              
-              {log.type !== MessageType.TEXT && (
-                <div className="text-xs text-gray-500 dark:text-gray-400">
-                  {log.type === MessageType.LOCATION ? 'Localização compartilhada' : 'Mídia enviada'}
-                </div>
-              )}
             </div>
           ))
         )}
       </div>
-
-      {logs.length > 0 && (
-        <div className="mt-4 text-xs text-gray-500 dark:text-gray-400">
-          <p>• Mostrando as últimas 100 mensagens</p>
-          <p>• Logs são atualizados em tempo real</p>
-        </div>
-      )}
     </div>
   );
 }

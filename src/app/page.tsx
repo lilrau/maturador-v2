@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+
 import { MaturadorDashboard } from '@/components/MaturadorDashboard';
 
 export default function Home() {

@@ -15,17 +15,22 @@ export class PersonalityManager {
 
   assignPersonality(instanceId: string): PersonalityProfile {
     if (this.instancePersonalities.has(instanceId)) {
-      return this.instancePersonalities.get(instanceId)!;
+      const existing = this.instancePersonalities.get(instanceId)!;
+      return existing;
     }
 
     const personality = this.selectRandomPersonality();
     this.instancePersonalities.set(instanceId, personality);
-    console.log(`Assigned personality "${personality.name}" to instance ${instanceId}`);
+    console.log(`🎭 Personalidade "${personality.name}" atribuída para instância ${instanceId}`);
     return personality;
   }
 
   getPersonality(instanceId: string): PersonalityProfile | undefined {
-    return this.instancePersonalities.get(instanceId);
+    const personality = this.instancePersonalities.get(instanceId);
+    if (!personality) {
+      return this.assignPersonality(instanceId);
+    }
+    return personality;
   }
 
   private selectRandomPersonality(): PersonalityProfile {
@@ -62,7 +67,8 @@ export class PersonalityManager {
 
   getRandomMessage(personality: PersonalityProfile): string {
     const vocabulary = personality.vocabulary;
-    return vocabulary[Math.floor(Math.random() * vocabulary.length)];
+    const message = vocabulary[Math.floor(Math.random() * vocabulary.length)];
+    return message;
   }
 
   shouldRespond(personality: PersonalityProfile): boolean {
@@ -94,7 +100,8 @@ export class PersonalityManager {
     const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
     
     // 50% chance to add emoji at the end, 50% at the beginning
-    return Math.random() < 0.5 ? `${text} ${randomEmoji}` : `${randomEmoji} ${text}`;
+    const enhanced = Math.random() < 0.5 ? `${text} ${randomEmoji}` : `${randomEmoji} ${text}`;
+    return enhanced;
   }
 
   getAllPersonalities(): PersonalityProfile[] {
