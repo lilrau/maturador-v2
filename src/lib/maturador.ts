@@ -1,6 +1,7 @@
 import { WuzapiClient } from './wuzapi';
 import { PersonalityManager } from './personality-manager';
 import { MediaManager } from './media-manager';
+import { logManager } from './log-manager';
 import { WuzapiInstance, MessageType, MaturadorConfig, MessageLog, PersonalityProfile } from '@/types';
 
 interface InstanceTimer {
@@ -17,7 +18,7 @@ export class WhatsAppMaturador {
   private config: MaturadorConfig;
   private _isRunning: boolean = false;
   private instanceTimers: Map<string, InstanceTimer> = new Map();
-  private messageLogs: MessageLog[] = [];
+
   private connectedInstances: WuzapiInstance[] = [];
 
   constructor(config: MaturadorConfig) {
@@ -218,12 +219,7 @@ export class WhatsAppMaturador {
   }
 
   private logMessage(log: MessageLog): void {
-    this.messageLogs.push(log);
-    
-    // Keep only last 1000 messages in memory
-    if (this.messageLogs.length > 1000) {
-      this.messageLogs = this.messageLogs.slice(-1000);
-    }
+    logManager.addMessageLog(log);
   }
 
   // Public methods for monitoring
@@ -232,10 +228,11 @@ export class WhatsAppMaturador {
   }
 
   getStatus(): { isRunning: boolean; instanceCount: number; messageCount: number; timers: InstanceTimer[] } {
+    const stats = logManager.getStats();
     return {
       isRunning: this._isRunning,
       instanceCount: this.connectedInstances.length,
-      messageCount: this.messageLogs.length,
+      messageCount: stats.total,
       timers: Array.from(this.instanceTimers.values())
     };
   }
@@ -245,7 +242,7 @@ export class WhatsAppMaturador {
   }
 
   getMessageLogs(): MessageLog[] {
-    return this.messageLogs.slice(-100); // Return last 100 messages
+    return logManager.getMessageLogs(100); // Return last 100 messages
   }
 
   getPersonalities(): Map<string, PersonalityProfile> {
