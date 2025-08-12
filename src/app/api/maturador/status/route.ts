@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import { WuzapiClient } from '@/lib/wuzapi';
 import { getDefaultConfig } from '@/lib/env-config';
 import { WhatsAppMaturador } from '@/lib/maturador';
+import { logManager } from '@/lib/log-manager';
 
 // Referência global para a instância do maturador
 declare global {
@@ -15,7 +16,9 @@ export async function GET() {
     // Sempre buscar instâncias conectadas, independentemente do estado do maturador
     const config = getDefaultConfig();
     const wuzapi = new WuzapiClient(config.baseUrl, config.token);
-    const connectedInstances = await wuzapi.getConnectedInstances();
+    
+    // Usar modo silencioso para evitar spam de logs
+    const connectedInstances = await wuzapi.getConnectedInstances(true);
     
     if (!instance) {
       return NextResponse.json({
@@ -23,23 +26,25 @@ export async function GET() {
         connectedInstances: connectedInstances.length,
         messagesSent: 0,
         instances: connectedInstances,
-        logs: []
+        logs: logManager.getMessageLogs(100)
       });
     }
 
-    // Usar os métodos da instância para obter o status correto
-    const status = instance.getStatus();
-    const logs = instance.getMessageLogs();
+    // Usar o logManager para obter os logs
+    const logs = logManager.getMessageLogs(100);
 
+    const stats = logManager.getStats();
+    
     return NextResponse.json({
       isRunning: instance.isRunning(),
       connectedInstances: connectedInstances.length,
-      messagesSent: logs.length,
+      messagesSent: stats.total,
       instances: connectedInstances,
       logs
     });
   } catch (error) {
-    console.error('Erro ao obter status:', error);
+    // Log apenas erros críticos
+    console.error('Erro crítico ao obter status:', error);
     return NextResponse.json({
       isRunning: false,
       connectedInstances: 0,

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1754593057577",
+    "timestamp": "2025-08-07T18:57:37.577Z",
+    "from": "732b97feeed29671035dafb367e87657",
+    "to": "554299907566:12@s.whatsapp.net",
+    "type": "text",
+    "content": "Entendi",
+    "success": true
+  },
+  {
+    "id": "1754593056863",
+    "timestamp": "2025-08-07T18:57:36.863Z",
+    "from": "bda6074e5203f7f7ff5b218eaff85ed5",
+    "to": "554298548472:3@s.whatsapp.net",
+    "type": "audio",
+    "content": "data:audio/ogg;base64,iVBORw0a",
+    "success": true
+  },
+  {
+    "id": "1754593056786",
+    "timestamp": "2025-08-07T18:57:36.786Z",
+    "from": "1b42b2f356d8515a39b48ba50798370e",
+    "to": "554298385978:8@s.whatsapp.net",
+    "type": "text",
+    "content": "😊 E aí?",
+    "success": true
+  },
+  {
+    "id": "1754593049984",
+    "timestamp": "2025-08-07T18:57:29.984Z",
+    "from": "3d7a8ed4d019e1829eaa4835a6ac9dbf",
+    "to": "554298354332:7@s.whatsapp.net",
+    "type": "image",
+    "content": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+    "success": false
+  },
+  {
+    "id": "1754593049732",
+    "timestamp": "2025-08-07T18:57:29.732Z",
+    "from": "4e662c83a8d1ce53e7483928a4ec2f6b",
+    "to": "554298548472:3@s.whatsapp.net",
+    "type": "audio",
+    "content": "data:audio/ogg;base64,iVBORw0a",
+    "success": true
+  },
+  {
+    "id": "1754593045965",
+    "timestamp": "2025-08-07T18:57:25.965Z",
+    "from": "3d7a8ed4d019e1829eaa4835a6ac9dbf",
+    "to": "554298354332:7@s.whatsapp.net",
+    "type": "text",
+    "content": "Tudo bem? 😊",
+    "success": true
+  },
+  {
+    "id": "1754593044338",
+    "timestamp": "2025-08-07T18:57:24.338Z",
+    "from": "bda6074e5203f7f7ff5b218eaff85ed5",
+    "to": "554298548954:3@s.whatsapp.net",
+    "type": "video",
+    "content": "data:video/mp4;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+    "success": false
+  },
+  {
+    "id": "1754593038571",
+    "timestamp": "2025-08-07T18:57:18.570Z",
+    "from": "175c36fb670e67d9d14ead3522f12a9c",
+    "to": "554298424190:30@s.whatsapp.net",
+    "type": "audio",
+    "content": "data:audio/ogg;base64,iVBORw0a",
+    "success": true
+  },
+  {
+    "id": "1754593035468",
+    "timestamp": "2025-08-07T18:57:15.468Z",
+    "from": "1b42b2f356d8515a39b48ba50798370e",
+    "to": "554298548954:3@s.whatsapp.net",
+    "type": "video",
+    "content": "data:video/mp4;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+    "success": false
+  },
+  {
+    "id": "1754593033357",
+    "timestamp": "2025-08-07T18:57:13.357Z",
+    "from": "175c36fb670e67d9d14ead3522f12a9c",
+    "to": "554298424190:30@s.whatsapp.net",
+    "type": "text",
+    "content": "😊 Estou morrendo de rir!",
+    "success": true
+  }
+]
